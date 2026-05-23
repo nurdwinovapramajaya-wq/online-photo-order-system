@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil | Nur Dwi Nova Pramajaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F4C81',
+                        secondary: '#2A70B9',
+                        neutral: '#F8F9FC',
+                        dark: '#2D3748',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                        'float': 'float 3s ease-in-out infinite',
+                        'scale-up': 'scaleUp 0.3s ease-in-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-8px)' },
+                        },
+                        scaleUp: {
+                            '0%': { transform: 'scale(1)' },
+                            '100%': { transform: 'scale(1.03)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .shadow-soft {
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+            }
+            .shadow-premium {
+                box-shadow: 0 10px 40px rgba(15, 76, 129, 0.12);
+            }
+            .border-dashed-custom {
+                border-style: dashed;
+                border-width: 1px;
+            }
+            .animate-hover {
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-neutral min-h-screen font-sans text-dark overflow-x-hidden">
+    <div class="container mx-auto px-4 py-10 max-w-3xl">
+        <!-- Kartu Utama -->
+        <div class="bg-white rounded-2xl shadow-premium overflow-hidden opacity-0 animate-fade-in">
+            
+            <!-- Bagian Header / Atas -->
+            <div class="bg-gradient-to-r from-primary to-secondary px-8 py-10 text-center relative overflow-hidden">
+                <div class="absolute inset-0 bg-white/10 backdrop-blur-sm"></div>
+                <div class="relative z-10">
+                    <img src="foto.jpg" alt="Foto Profil" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow-lg mx-auto mb-4 animate-float hover:animate-scale-up cursor-pointer">
+                    <h1 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-white tracking-wider">NUR DWI NOVA PRAMAJAYA</h1>
+                    <p class="text-blue-100 text-lg opacity-90">Siswa SMKN 1 Cirebon | Teknik Jaringan Komputer</p>
+                </div>
+            </div>
+
+            <!-- Bagian Isi -->
+            <div class="px-8 py-10">
+
+                <!-- Informasi Pribadi -->
+                <div class="mb-10 opacity-0 animate-slide-up" style="animation-delay: 0.2s;">
+                    <h2 class="text-xl font-semibold text-primary border-b-2 border-blue-100 pb-2 mb-5 flex items-center">
+                        <i class="fa fa-user-circle mr-2 animate-hover hover:rotate-12"></i> Informasi Pribadi
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex justify-between py-2 border-b border-dashed-custom border-gray-200 animate-hover hover:pl-2 hover:text-primary">
+                            <span class="font-medium text-gray-600 w-28">Nama Lengkap</span>
+                            <span class="text-right flex-1 font-medium">Nur Dwi Nova Pramajaya</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-dashed-custom border-gray-200 animate-hover hover:pl-2 hover:text-primary">
+                            <span class="font-medium text-gray-600 w-28">Tempat Lahir</span>
+                            <span class="text-right flex-1 font-medium">Kuningan</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-dashed-custom border-gray-200 animate-hover hover:pl-2 hover:text-primary">
+                            <span class="font-medium text-gray-600 w-28">Tgl Lahir</span>
+                            <span class="text-right flex-1 font-medium">30 November 2009</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-dashed-custom border-gray-200 animate-hover hover:pl-2 hover:text-primary">
+                            <span class="font-medium text-gray-600 w-28">Sekolah</span>
+                            <span class="text-right flex-1 font-medium">SMKN 1 Cirebon</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-dashed-custom border-gray-200 animate-hover hover:pl-2 hover:text-primary">
+                            <span class="font-medium text-gray-600 w-28">Kelas</span>
+                            <span class="text-right flex-1 font-medium">X TJKT 2</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-dashed-custom border-gray-200 md:col-span-2 animate-hover hover:pl-2 hover:text-primary">
+                            <span class="font-medium text-gray-600 w-28">Hobi</span>
+                            <span class="text-right flex-1 font-medium">Berlari</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tentang Saya -->
+                <div class="mb-10 opacity-0 animate-slide-up" style="animation-delay: 0.4s;">
+                    <h2 class="text-xl font-semibold text-primary border-b-2 border-blue-100 pb-2 mb-5 flex items-center">
+                        <i class="fa fa-quote-left mr-2 animate-hover hover:scale-110"></i> Tentang Saya
+                    </h2>
+                    <div class="text-gray-700 leading-relaxed text-justify space-y-3">
+                        <p class="animate-hover hover:pl-1">Halo, perkenalkan nama saya Nur Dwi Nova Pramajaya. Saya adalah siswa kelas X TJKT 2 di SMK Negeri 1 Cirebon. Saya lahir di Kuningan pada tanggal 30 November 2009. Saat ini saya sedang menempuh pendidikan kejuruan dengan fokus utama pada Teknik Jaringan Komputer dan Telekomunikasi.</p>
+                        
+                        <p class="animate-hover hover:pl-1">Saya memiliki ketertarikan yang besar terhadap dunia teknologi, khususnya bagaimana jaringan bekerja, cara konfigurasi perangkat, serta sistem komunikasi data. Saya memilih jurusan ini karena saya ingin memahami lebih dalam tentang dunia IT dan berharap suatu hari nanti bisa berkarier di bidang teknologi sebagai ahli jaringan atau tenaga profesional di bidang telekomunikasi.</p>
+                        
+                        <p class="animate-hover hover:pl-1">Di sela-sela kesibukan belajar, saya memiliki hobi berlari. Bagi saya, berlari bukan hanya sekadar olahraga untuk menjaga kesehatan tubuh, tetapi juga sarana melatih kedisiplinan, ketahanan mental, dan semangat pantang menyerah. Prinsip hidup yang saya pegang adalah "Terus melangkah meski berat, sampai mencapai garis akhir". Prinsip ini selalu saya terapkan dalam segala hal, termasuk saat mengerjakan tugas sekolah maupun menghadapi tantangan baru.</p>
+                        
+                        <p class="animate-hover hover:pl-1">Saya adalah pribadi yang ingin terus berkembang, suka belajar hal baru, dan mudah bergaul dengan siapa saja. Saya percaya bahwa dengan kerja keras, ketekunan, dan rasa ingin tahu yang tinggi, saya bisa meraih cita-cita saya dan menjadi orang yang berguna bagi keluarga, masyarakat, dan bangsa.</p>
+                        
+                        <p class="animate-hover hover:pl-1">Terima kasih telah mengunjungi halaman profil saya. Jika ada keperluan, ingin berkenalan, atau berdiskusi seputar teknologi, silakan hubungi saya melalui kontak di bawah ini.</p>
+                    </div>
+                </div>
+
+
+<!-- ------------------------------ BAGIAN SAHABAT ------------------------------ -->
+<div class="mb-8 opacity-0 animate-slide-up" style="animation-delay: 0.6s;">
+    <h2 class="text-xl font-semibold text-primary border-b-2 border-blue-100 pb-2 mb-4 flex items-center">
+        <i class="fa fa-users mr-2 animate-hover hover:rotate-6"></i> Sahabat Seperjuangan
+    </h2>
+    <div class="grid md:grid-cols-3 gap-4">
+        <!-- Foto Sahabat 1 -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm animate-hover hover:shadow-premium hover:-translate-y-2 group">
+            <img src="sahabat1.jpg" alt="Bersama Sahabat" class="w-full h-56 object-contain bg-gray-100 group-hover:scale-105 transition-all duration-500">
+            <div class="p-3 text-center relative z-10">
+                <p class="text-gray-700 text-sm font-medium italic">"Sahabat bukan hanya mereka yang selalu ada, tapi mereka yang mengerti saat kita tak mampu berkata-kata."</p>
+            </div>
+        </div>
+        <!-- Foto Sahabat 2 -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm animate-hover hover:shadow-premium hover:-translate-y-2 group">
+            <img src="sahabat2.jpg" alt="Bersama Sahabat" class="w-full h-56 object-contain bg-gray-100 group-hover:scale-105 transition-all duration-500">
+            <div class="p-3 text-center relative z-10">
+                <p class="text-gray-700 text-sm font-medium italic">"Bersama kita kuat, terpisah kita runtuh. Terima kasih sudah menjadi bagian dari cerita hidupku."</p>
+            </div>
+        </div>
+        <!-- Foto Sahabat 3 -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm animate-hover hover:shadow-premium hover:-translate-y-2 group">
+            <img src="sahabat3.jpg" alt="Bersama Sahabat" class="w-full h-56 object-contain bg-gray-100 group-hover:scale-105 transition-all duration-500">
+            <div class="p-3 text-center relative z-10">
+                <p class="text-gray-700 text-sm font-medium italic">"Kenangan indah tercipta bukan dari waktu yang lama, tapi dari kebersamaan yang tulus dan penuh makna."</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------------ BAGIAN PERJALANAN SEKOLAH ------------------------------ -->
+<div class="mb-8 opacity-0 animate-slide-up" style="animation-delay: 0.8s;">
+    <h2 class="text-xl font-semibold text-primary border-b-2 border-blue-100 pb-2 mb-4 flex items-center">
+        <i class="fa fa-graduation-cap mr-2 animate-hover hover:rotate-12"></i> Perjalanan Pendidikan
+    </h2>
+    <div class="grid md:grid-cols-3 gap-4">
+        <!-- SD -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm animate-hover hover:shadow-premium hover:-translate-y-2 group text-center">
+            <img src="sd.jpg" alt="Kelulusan SD" class="w-full h-56 object-contain bg-gray-100 group-hover:scale-105 transition-all duration-500">
+            <div class="p-3 relative z-10">
+                <h3 class="font-bold text-primary text-lg">SD</h3>
+                <p class="text-gray-600 text-sm font-medium">Angkatan 2016 - 2022</p>
+            </div>
+        </div>
+        <!-- SMP -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm animate-hover hover:shadow-premium hover:-translate-y-2 group text-center">
+            <img src="smp.jpg" alt="Kelulusan SMP" class="w-full h-56 object-contain bg-gray-100 group-hover:scale-105 transition-all duration-500">
+            <div class="p-3 relative z-10">
+                <h3 class="font-bold text-primary text-lg">SMP</h3>
+                <p class="text-gray-600 text-sm font-medium">Angkatan 2022 - 2025</p>
+            </div>
+        </div>
+        <!-- SMK -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm animate-hover hover:shadow-premium hover:-translate-y-2 group text-center">
+            <img src="smk.jpg" alt="Masa SMK" class="w-full h-56 object-contain bg-gray-100 group-hover:scale-105 transition-all duration-500">
+            <div class="p-3 relative z-10">
+                <h3 class="font-bold text-primary text-lg">SMK</h3>
+                <p class="text-gray-600 text-sm font-medium">2025 - Sekarang</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------------ BAGIAN PRESTASI ------------------------------ -->
+<div class="mb-8 opacity-0 animate-slide-up" style="animation-delay: 1s;">
+    <h2 class="text-xl font-semibold text-primary border-b-2 border-blue-100 pb-2 mb-4 flex items-center">
+        <i class="fa fa-trophy mr-2 animate-hover hover:text-yellow-500"></i> Prestasi & Penghargaan
+    </h2>
+    <div class="grid md:grid-cols-2 gap-4">
+        <!-- Prestasi 1 -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm animate-hover hover:shadow-premium hover:-translate-y-2 group flex flex-col md:flex-row items-center">
+            <img src="prestasi1.jpg" alt="Prestasi Kelas 7" class="w-full md:w-1/2 h-48 object-contain bg-gray-100 group-hover:scale-105 transition-all duration-500">
+            <div class="p-3 text-center md:text-left">
+                <span class="text-sm text-gray-500 font-semibold">Juni 2023</span>
+                <h3 class="font-bold text-lg text-dark mt-1">Peringkat 3 Kelas</h3>
+                <p class="text-gray-600 text-sm">Kelas 7 - Semester 2</p>
+            </div>
+        </div>
+        <!-- Prestasi 2 -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm animate-hover hover:shadow-premium hover:-translate-y-2 group flex flex-col md:flex-row items-center">
+            <img src="prestasi2.jpg" alt="Prestasi Kelas 8" class="w-full md:w-1/2 h-48 object-contain bg-gray-100 group-hover:scale-105 transition-all duration-500">
+            <div class="p-3 text-center md:text-left">
+                <span class="text-sm text-gray-500 font-semibold">Desember 2023</span>
+                <h3 class="font-bold text-lg text-dark mt-1">Peringkat 2 Kelas</h3>
+                <p class="text-gray-600 text-sm">Kelas 8 - Semester 1</p>
+            </div>
+        </div>
+        <!-- Prestasi 3: Sertifikat / Piagam -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm animate-hover hover:shadow-premium hover:-translate-y-2 group md:col-span-2 flex flex-col items-center">
+            <img src="sertifikat.jpg" alt="Sertifikat Penghargaan" class="w-full h-64 object-contain bg-gray-100 p-2 group-hover:scale-105 transition-all duration-500">
+            <div class="p-3 text-center">
+                <span class="text-sm text-gray-500 font-semibold">Dokumen Resmi</span>
+                <h3 class="font-bold text-lg text-dark mt-1">Sertifikat & Piagam Penghargaan</h3>
+                <p class="text-gray-600 text-sm">Bukti pencapaian dan keikutsertaan dalam kegiatan prestasi</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                <!-- Kontak & Media Sosial (Posisi di AKHIR) -->
+                <div class="opacity-0 animate-slide-up" style="animation-delay: 1.2s;">
+                    <h2 class="text-xl font-semibold text-primary border-b-2 border-blue-100 pb-2 mb-5 text-center flex items-center justify-center">
+                        <i class="fa fa-paper-plane mr-2 animate-hover hover:translate-x-1"></i> Hubungi Saya
+                    </h2>
+                    <div class="flex items-center justify-center gap-10 py-4">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/6281313758657" target="_blank" class="flex flex-col items-center gap-2 group">
+                            <div class="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center group-hover:bg-green-500 transition-all duration-500 shadow-lg group-hover:shadow-green-200/50 group-hover:scale-110">
+                                <i class="fa fa-whatsapp text-2xl text-green-500 group-hover:text-white transition-all"></i>
+                            </div>
+                            <span class="text-sm text-gray-600 font-medium">WhatsApp</span>
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:nurdwinovapramajaya@gmail.com" target="_blank" class="flex flex-col items-center gap-2 group">
+                            <div class="w-14 h-14 bg-red-50 rounded-full flex items-center justify-center group-hover:bg-red-500 transition-all duration-500 shadow-lg group-hover:shadow-red-200/50 group-hover:scale-110">
+                                <i class="fa fa-envelope text-2xl text-red-500 group-hover:text-white transition-all"></i>
+                            </div>
+                            <span class="text-sm text-gray-600 font-medium">Email</span>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@nurdwinovapramajaya" target="_blank" class="flex flex-col items-center gap-2 group">
+                            <div class="w-14 h-14 bg-red-50 rounded-full flex items-center justify-center group-hover:bg-red-600 transition-all duration-500 shadow-lg group-hover:shadow-red-200/50 group-hover:scale-110">
+                                <i class="fa fa-youtube-play text-2xl text-red-600 group-hover:text-white transition-all"></i>
+                            </div>
+                            <span class="text-sm text-gray-600 font-medium">YouTube</span>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/nvaa.pra" target="_blank" class="flex flex-col items-center gap-2 group">
+                            <div class="w-14 h-14 bg-pink-50 rounded-full flex items-center justify-center group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all duration-500 shadow-lg group-hover:shadow-pink-200/50 group-hover:scale-110">
+                                <i class="fa fa-instagram text-2xl text-pink-600 group-hover:text-white transition-all"></i>
+                            </div>
+                            <span class="text-sm text-gray-600 font-medium">Instagram</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+                  </html>
+                  
